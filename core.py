@@ -23,6 +23,5 @@ for file_name in os.listdir('cogs'):
     if file_name.endswith('.py'):
         bot.load_extension(f'cogs.{file_name[:-3]}')
 
-BOT_TOKEN = ${{ secrets.BOT_TOKEN }}
-bot.run(BOT_TOKEN)
+bot.run('BOT_TOKEN')
 
