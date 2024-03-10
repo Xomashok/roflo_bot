@@ -15,9 +15,10 @@ class Hent(commands.Cog):
             async with session.get(url=url) as resp:
                 data = await resp.json()
         all_hent = ''
-        lim = 0  
+        lim = 0
+        count = len(data)  
         while lim < 5:
-            l = random.randint(0, 1000)
+            l = random.randint(0, count)
             d = data[int(l)]
             all_hent += str(d['file_url']) + '\n'
             lim += 1
