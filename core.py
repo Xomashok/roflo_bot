@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 bot_token = os.getenv("BOT_TOKEN")
-os.mkdir('data', exist_ok=True)
+os.makedirs('data', exist_ok=True)
 
 bot = commands.Bot(command_prefix="!", intents=disnake.Intents.all())
 
