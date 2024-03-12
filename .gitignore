@@ -3,4 +3,4 @@ cogs/__pycache__
 *.pyc
 .env
 test
-data/.
+data/*
